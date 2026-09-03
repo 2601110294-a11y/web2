@@ -1,0 +1,67 @@
+.book-card {
+    width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+
+    transition: transform 0.25s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+}
+
+.book-cover {
+    width: 180px;
+    height: 250px;
+
+    display: block;
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    border-radius: 3px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+    transition: 0.25s;
+}
+
+.book-card:hover .book-cover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.book-card h1 {
+    margin: 14px 0 5px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #222;
+}
+
+.book-card h2 {
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #888;
+}
+
+
+/* 책 전체를 가로로 정렬 */
+.library-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 35px;
+
+    width: 100%;
+    padding: 50px 20px;
+
+    box-sizing: border-box;
+}
