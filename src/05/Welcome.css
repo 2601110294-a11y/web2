@@ -1,0 +1,134 @@
+/* 전체 배경 */
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+            radial-gradient(circle at top left, #ffe8cc 0%, transparent 35%),
+            radial-gradient(circle at bottom right, #ffd6d6 0%, transparent 35%),
+            linear-gradient(135deg, #fff7ed, #fff1f2);
+
+    font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+}
+
+
+/* 전체 카드 영역 */
+.welcome-list {
+    width: 520px;
+    margin: 90px auto;
+    padding: 40px;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 28px;
+
+    box-shadow:
+            0 20px 45px rgba(110, 70, 40, 0.12),
+            0 5px 15px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* 공통 카드 디자인 */
+.welcome-card {
+    margin: 0;
+    padding: 24px 28px;
+
+    border-radius: 18px;
+    border: 2px solid transparent;
+
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    box-shadow:
+            0 8px 18px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* 왼쪽 포인트 선 */
+.welcome-card::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 7px;
+    height: 100%;
+
+    border-radius: 18px 0 0 18px;
+}
+
+
+/* 김인공 카드 */
+.김인공 {
+    background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+    color: #be123c;
+    border-color: #fecdd3;
+}
+
+.김인공::before {
+    background: #f43f5e;
+}
+
+
+/* 박폴리 카드 */
+.박폴리 {
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    color: #c2410c;
+    border-color: #fed7aa;
+}
+
+.박폴리::before {
+    background: #f97316;
+}
+
+
+/* 이정수 카드 */
+.이정수 {
+    background: linear-gradient(135deg, #fefce8, #fef3c7);
+    color: #a16207;
+    border-color: #fde68a;
+}
+
+.이정수::before {
+    background: #eab308;
+}
+
+
+/* 마우스 올렸을 때 */
+.welcome-card:hover {
+    transform: translateY(-6px) scale(1.02);
+
+    box-shadow:
+            0 14px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* 김인공 hover */
+.김인공:hover {
+    background: linear-gradient(135deg, #ffe4e6, #fecdd3);
+}
+
+
+/* 박폴리 hover */
+.박폴리:hover {
+    background: linear-gradient(135deg, #ffedd5, #fed7aa);
+}
+
+
+/* 이정수 hover */
+.이정수:hover {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+}

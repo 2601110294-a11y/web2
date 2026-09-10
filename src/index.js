@@ -9,14 +9,19 @@ import './index.css';
 // import Library from "./03/enhanced_css/Library";
 // import "./03/enhanced_css/Book.css"
 import reportWebVitals from './reportWebVitals';
-import Clock from "./04/Clock";
-import "./04/Clock.css";
+// import Clock from "./04/Clock";
+// import "./04/Clock.css";
+import ComfirmDialog from "./04/ComfirmDialog";
+// import ComfirmDialogList from "./04/ComfirmDialogList";
+import WelcomeList from "./05/WelcomeList";
+import "./05/Welcome.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(()=> {
         root.render(
             <React.StrictMode>
-                <Clock/>
+                <WelcomeList/>
             </React.StrictMode>
         );
     }, 1000
