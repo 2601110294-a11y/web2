@@ -1,0 +1,14 @@
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-info-name {
+    font-size: 23px;
+    font-weight: bold;
+    color: #3f342d;
+
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgba(120, 90, 70, 0.18);
+}
