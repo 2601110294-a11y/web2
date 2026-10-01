@@ -19,8 +19,10 @@ import ComfirmDialog from "./04/ComfirmDialog";
 import BookList from "./05/exam02/BookList";
 // import "./05/exam02/Book.css";
 // import "./05/exam02/BookList.css";
-import UserInfoList from "./05/exam03/UserInfoList";
-import "./05/exam03/UserInfoList.css";
+// import UserInfoList from "./05/exam03/UserInfoList";
+// import "./05/exam03/UserInfoList.css";
+import NotificationList from "./06/NotificationList";
+import "./06/Notification.css";
 
 
 
@@ -28,7 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(()=> {
         root.render(
             <React.StrictMode>
-                <UserInfoList/>
+                <NotificationList/>
             </React.StrictMode>
         );
     }, 1000

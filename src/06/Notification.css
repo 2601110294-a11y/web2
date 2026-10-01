@@ -1,0 +1,103 @@
+/* 전체 화면 */
+body {
+    margin: 0;
+    padding: 40px 0;
+
+    background-color: #fff7ed;
+    font-family: Arial, sans-serif;
+}
+
+
+/* 알림 하나하나의 박스 */
+#root > div > div {
+    width: 520px;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    margin: 18px auto;
+    padding: 18px 25px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #f1d8c5;
+    border-left: 7px solid #ff9b67;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(110, 80, 60, 0.13);
+
+    transition: 0.3s;
+
+    animation: notificationAppear 0.5s ease;
+}
+
+
+/* 알림 앞에 종 아이콘 추가 */
+#root > div > div::before {
+    content: "🔔";
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    margin-right: 20px;
+
+    background-color: #ffe5d2;
+    border-radius: 15px;
+
+    font-size: 24px;
+}
+
+
+/* 알림 글씨 */
+#root > div > div > span {
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #4a403a;
+
+    line-height: 1.5;
+}
+
+
+/* 마우스를 올렸을 때 */
+#root > div > div:hover {
+    transform: translateY(-5px);
+
+    background-color: #fffaf6;
+
+    border-left-color: #ff7f45;
+
+    box-shadow: 0 13px 28px rgba(110, 80, 60, 0.22);
+}
+
+
+/* 처음 나타나는 효과 */
+@keyframes notificationAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* 작은 화면 */
+@media (max-width: 650px) {
+
+    #root > div > div {
+        width: 80%;
+    }
+
+}
