@@ -26,12 +26,15 @@ import './index.css';
 // import ToggleList from "./08/ToggleList";
 // import MyButton from "./08/MyButton";
 import Mybutton2 from "./08/Mybutton2";
-import MyButton2 from "./08/Mybutton2";
+// import MyButton2 from "./08/Mybutton2"
+import ConfirmButton2 from "./08/ConfirmButton2";
+import Message from "./08/Message";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <MyButton2/>
+        <Message/>
     </React.StrictMode>
 );
 
