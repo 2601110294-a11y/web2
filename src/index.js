@@ -8,13 +8,14 @@ import './index.css';
 // import Library from "./03/Library"
 // import Library from "./03/enhanced_css/Library";
 // import "./03/enhanced_css/Book.css"
-import reportWebVitals from './reportWebVitals';
+// import reportWebVitals from './reportWebVitals';
 // import Clock from "./04/Clock";
 // import "./04/Clock.css";
 import ComfirmDialog from "./04/ComfirmDialog";
 // import ComfirmDialogList from "./04/ComfirmDialogList";
 // import WelcomeList from "./05/exam01/WelcomeList";
 // import "./05/exam01/Welcome.css";
+// import "./08/ToggleList";
 
 import BookList from "./05/exam02/BookList";
 // import "./05/exam02/Book.css";
@@ -22,7 +23,9 @@ import BookList from "./05/exam02/BookList";
 // import UserInfoList from "./05/exam03/UserInfoList";
 // import "./05/exam03/UserInfoList.css";
 import NotificationList from "./06/NotificationList";
-import "./06/Notification.css";
+// import "./06/Notification.css";
+// import ToggleList from "./08/ToggleList";
+import MyButton from "./08/MyButton";
 
 
 
@@ -30,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(()=> {
         root.render(
             <React.StrictMode>
-                <NotificationList/>
+                <MyButton/>
             </React.StrictMode>
         );
     }, 1000
@@ -39,4 +42,4 @@ setInterval(()=> {
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
