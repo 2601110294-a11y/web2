@@ -1,45 +1,38 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
+
 import './index.css';
 // import App from './App';
 
-
-//import TodoListApp from "./01/TodoListApp";
-// import Library from "./03/Library"
+// import TodoListApp from "./01/TodoListApp";
+// import Library from "./03/Library";
 // import Library from "./03/enhanced_css/Library";
-// import "./03/enhanced_css/Book.css"
+// import "./03/enhanced_css/Book.css";
 // import reportWebVitals from './reportWebVitals';
 // import Clock from "./04/Clock";
 // import "./04/Clock.css";
-import ComfirmDialog from "./04/ComfirmDialog";
+// import ComfirmDialog from "./04/ComfirmDialog";
 // import ComfirmDialogList from "./04/ComfirmDialogList";
 // import WelcomeList from "./05/exam01/WelcomeList";
 // import "./05/exam01/Welcome.css";
-// import "./08/ToggleList";
-
-import BookList from "./05/exam02/BookList";
+// import BookList from "./05/exam02/BookList";
 // import "./05/exam02/Book.css";
 // import "./05/exam02/BookList.css";
 // import UserInfoList from "./05/exam03/UserInfoList";
 // import "./05/exam03/UserInfoList.css";
-import NotificationList from "./06/NotificationList";
+// import NotificationList from "./06/NotificationList";
 // import "./06/Notification.css";
+
 // import ToggleList from "./08/ToggleList";
-import MyButton from "./08/MyButton";
-
-
-
+// import MyButton from "./08/MyButton";
+import Mybutton2 from "./08/Mybutton2";
+import MyButton2 from "./08/Mybutton2";
 const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(()=> {
-        root.render(
-            <React.StrictMode>
-                <MyButton/>
-            </React.StrictMode>
-        );
-    }, 1000
-)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+root.render(
+    <React.StrictMode>
+        <MyButton2/>
+    </React.StrictMode>
+);
+
 // reportWebVitals();
