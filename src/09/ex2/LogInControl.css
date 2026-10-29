@@ -1,0 +1,102 @@
+
+/* 전체 화면 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background: linear-gradient(135deg, #fff1e6, #f4ecff, #e8f2ff);
+}
+
+/* 중앙 정렬 */
+#root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 로그인 카드 */
+#root > div {
+    width: 420px;
+    max-width: calc(100% - 80px);
+    padding: 55px 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(92, 80, 120, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* 카드 호버 효과 */
+#root > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(92, 80, 120, 0.22);
+}
+
+/* 환영 메시지 */
+#root h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #51476a;
+    margin-bottom: 25px;
+}
+
+#root h2 {
+    font-size: 26px;
+    color: #51476a;
+    margin-bottom: 25px;
+}
+
+/* 일반 글씨 */
+#root p {
+    font-size: 17px;
+    color: #777087;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* 로그인 / 로그아웃 버튼 */
+#root button {
+    width: 100%;
+    padding: 17px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #aa9be9, #819be8);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 버튼에 마우스를 올렸을 때 */
+#root button:hover {
+    background: linear-gradient(135deg, #9380df, #6d85df);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(129, 155, 232, 0.35);
+}
+
+/* 버튼 클릭 */
+#root button:active {
+    transform: scale(0.97);
+}
+
+/* 모바일 화면 */
+@media (max-width: 480px) {
+    #root > div {
+        padding: 35px 25px;
+    }
+
+    #root h1 {
+        font-size: 24px;
+    }
+
+    #root button {
+        font-size: 16px;
+
+        
+
+    }
+}

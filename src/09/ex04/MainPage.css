@@ -1,0 +1,131 @@
+
+/* 전체 배경 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background: linear-gradient(135deg, #fff1e8, #f3eaff, #e7f2ff);
+}
+
+/* 중앙 정렬 */
+#root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 메인 카드 */
+#root > div {
+    width: 430px;
+    max-width: calc(100% - 80px);
+    min-height: 230px;
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid white;
+    border-radius: 28px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(100, 85, 130, 0.15);
+    transition: all 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* 카드 호버 효과 */
+#root > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 60px rgba(100, 85, 130, 0.22);
+}
+
+/* 상단 아이콘 */
+#root > div::before {
+    content: "🔔";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;
+    background: linear-gradient(135deg, #f5eaff, #e8edff);
+    border-radius: 25px;
+    font-size: 42px;
+    box-shadow: 0 8px 20px rgba(160, 140, 210, 0.15);
+    transition: transform 0.3s ease;
+}
+
+/* 아이콘 호버 */
+#root > div:hover::before {
+    transform: rotate(-10deg) scale(1.08);
+}
+
+/* 경고 메시지 */
+#root > div > div {
+    width: 90%;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff0f0, #ffe6e9);
+    border: 1px solid #ffc6ce;
+    border-radius: 16px;
+    color: #d65368;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(230, 100, 120, 0.1);
+    animation: fadeIn 0.4s ease;
+}
+
+/* 경고 메시지 앞 아이콘 */
+#root > div > div::before {
+    content: "⚠️ ";
+}
+
+/* 버튼 */
+#root button {
+    width: 85%;
+    padding: 17px 25px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #aa9be9, #819be8);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 버튼 호버 */
+#root button:hover {
+    background: linear-gradient(135deg, #9380df, #6d85df);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(129, 155, 232, 0.35);
+}
+
+/* 버튼 클릭 */
+#root button:active {
+    transform: scale(0.96);
+}
+
+/* 경고 등장 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 모바일 */
+@media (max-width: 480px) {
+    #root > div {
+        padding: 35px 25px;
+    }
+
+    #root button {
+        font-size: 16px;
+    }
+}

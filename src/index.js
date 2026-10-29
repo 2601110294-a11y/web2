@@ -29,12 +29,18 @@ import Mybutton2 from "./08/Mybutton2";
 // import MyButton2 from "./08/Mybutton2"
 import ConfirmButton2 from "./08/ConfirmButton2";
 import Message from "./08/Message";
+import LogInButton from "./09/ex2/LogInButton";
+// import LogInControl from "./09/ex2/LogInControl";
+import MailBox from "./09/ex3/MailBox";
+import MainPage from "./09/ex04/MainPage";
+import LandingPage from "./09/finalEX/LandingPage";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <Message/>
+        <LandingPage/>
     </React.StrictMode>
 );
 

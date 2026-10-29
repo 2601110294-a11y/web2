@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+    background: linear-gradient(135deg, #fff1e6, #f3eaff, #e7f2ff);
+}
+
+/* 화면 중앙 정렬 */
+#root {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* 가로로 긴 메인 카드 */
+#root > div {
+    width: 1000px;
+    max-width: 100%;
+    min-height: 450px;
+    padding: 45px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 55px rgba(100, 85, 130, 0.16);
+}
+
+/* 왼쪽 로그인 영역 */
+#root > div > div:first-child {
+    width: 35%;
+    min-height: 300px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    background: linear-gradient(135deg, #f5edff, #eaf0ff);
+    border-radius: 25px;
+}
+
+/* 로그인 영역 아이콘 */
+#root > div > div:first-child::before {
+    content: "👋";
+    font-size: 65px;
+}
+
+/* 환영 메시지 */
+#root span {
+    color: #7562a8;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 로그인 버튼 */
+#root button {
+    padding: 15px 45px;
+    border: none;
+    border-radius: 15px;
+
+    background: linear-gradient(135deg, #aa9be9, #819be8);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#root button:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, #9380df, #6d85df);
+    box-shadow: 0 10px 25px rgba(129, 155, 232, 0.3);
+}
+
+/* 오른쪽 콘텐츠 영역 */
+#root > div > div:nth-child(2) {
+    width: 65%;
+    min-height: 340px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    background: #fffaf7;
+    border: 1px solid #f0e8f8;
+    border-radius: 25px;
+
+    color: #51476a;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 고양이 이미지 */
+#root img {
+    width: 100%;
+    max-width: 400px;
+    height: 230px;
+    object-fit: cover;
+
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 0 12px 30px rgba(100, 85, 130, 0.15);
+
+    transition: 0.3s;
+}
+
+#root img:hover {
+    transform: scale(1.04);
+}
+
+/* 작은 화면에서는 세로 배치 */
+@media (max-width: 700px) {
+    #root > div {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    #root > div > div:first-child,
+    #root > div > div:nth-child(2) {
+        width: 100%;
+        min-height: auto;
+    }
+}
