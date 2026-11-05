@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(135deg, #eef2ff, #dce8ff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* 전체 폼 */
+form {
+    width: 450px;
+    max-width: 90%;
+    margin: 120px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* 질문 글씨 */
+label {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #34456b;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* 과일 선택창 */
+select {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3456a3;
+    background-color: #f3f6ff;
+    border: 2px solid #d4dfff;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* 선택창 클릭 효과 */
+select:focus {
+    border-color: #648de5;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(100, 141, 229, 0.2);
+}
+
+/* 제출 버튼 */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #648de5;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 버튼 마우스 효과 */
+button:hover {
+    background-color: #416dc7;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(65, 109, 199, 0.3);
+}
+
+/* 버튼 클릭 효과 */
+button:active {
+    transform: scale(0.98);
+}

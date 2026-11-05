@@ -1,0 +1,32 @@
+body {
+    background-color: #f3f5f9;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    background-color: #eef3ff;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3456a3;
+    text-align: center;
+    transition: 0.3s;
+}
+
+li:hover {
+    background-color: #d6e4ff;
+    transform: scale(1.03);
+    cursor: pointer;
+}

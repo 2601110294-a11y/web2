@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(135deg, #eef2ff, #dce6ff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* 예약 신청서 */
+form {
+    width: 450px;
+    max-width: 90%;
+    margin: 120px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+/* 항목 이름 */
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #34456b;
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+/* 아침 식사 체크박스 */
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+    cursor: pointer;
+    accent-color: #648de5;
+    vertical-align: middle;
+}
+
+/* 방문자 수 입력창 */
+input[type="number"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    font-size: 18px;
+    color: #3456a3;
+    background-color: #f3f6ff;
+    border: 2px solid #d4dfff;
+    border-radius: 12px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* 입력창 클릭 효과 */
+input[type="number"]:focus {
+    border-color: #648de5;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(100, 141, 229, 0.2);
+}
+
+/* 제출 버튼 */
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 15px;
+    background-color: #648de5;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 마우스 올렸을 때 */
+button:hover {
+    background-color: #416dc7;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(65, 109, 199, 0.3);
+}
+
+/* 버튼 클릭 효과 */
+button:active {
+    transform: scale(0.98);
+}

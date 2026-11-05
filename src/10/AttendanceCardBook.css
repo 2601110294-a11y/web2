@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(135deg, #f5f7ff, #e9edff);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 전체 출석부 */
+#root > div {
+    width: 700px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* 제목 */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #303b59;
+    margin: 0 0 35px 0;
+    letter-spacing: 2px;
+}
+
+/* 학생 목록 */
+#root > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 학생 카드 */
+#root > div > div > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    width: 100%;
+    padding: 25px 30px;
+    background-color: #eef3ff;
+    border-radius: 18px;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+/* 마우스 효과 */
+#root > div > div > div:hover {
+    background-color: #e0eaff;
+    border-color: #8ba9ee;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* 학생 사진 */
+#root > div > div > div > img {
+    width: 110px;
+    height: 110px;
+    min-width: 110px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid white;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* 학생 정보 */
+#root > div > div > div > div {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+/* 학생 이름 */
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3456a3;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+}
+
+/* 학년 및 전공 */
+p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+    margin: 0;
+    line-height: 1.8;
+    word-break: keep-all;
+}

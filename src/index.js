@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 
-import './index.css';
+//import './index.css';
 // import App from './App';
 
 // import TodoListApp from "./01/TodoListApp";
@@ -34,13 +34,20 @@ import LogInButton from "./09/ex2/LogInButton";
 import MailBox from "./09/ex3/MailBox";
 import MainPage from "./09/ex04/MainPage";
 import LandingPage from "./09/finalEX/LandingPage";
+import maptest from "./10/MapTest";
+import MapTest from "./10/MapTest";
+import AttendanceBook from "./10/AttendanceBook";
+import AttendanceCardBook from "./10/AttendanceCardBook";
+import NewForm from "./10/11/NewForm";
+import FruitSelect from "./10/11/FruitSelect";
+import Reservation from "./10/11/Reservation";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <LandingPage/>
+        <Reservation/>
     </React.StrictMode>
 );
 
