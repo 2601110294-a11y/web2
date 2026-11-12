@@ -1,0 +1,118 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff, #f8fafc);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* 전체 화면 중앙 정렬 */
+#root > div > div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+}
+
+/* 섭씨, 화씨 입력 카드 */
+fieldset {
+    width: 100%;
+    max-width: 400px;
+    min-width: 0;
+    margin: 0;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 35px rgba(70, 100, 160, 0.15);
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+fieldset:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(70, 100, 160, 0.22);
+}
+
+/* 섭씨, 화씨 제목 */
+legend {
+    padding: 10px 22px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.25);
+}
+
+/* 입력창 */
+fieldset input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 18px;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    background: #f8fafc;
+    color: #1e293b;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+fieldset input:focus {
+    border-color: #6366f1;
+    background: white;
+    box-shadow: 0 0 0 5px rgba(99, 102, 241, 0.12);
+}
+
+/* 물 끓는지 결과 */
+fieldset ~ p {
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #2563eb, #6366f1);
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    fieldset {
+        padding: 22px;
+    }
+
+    legend {
+        font-size: 12px;
+    }
+
+    fieldset input {
+        font-size: 22px;
+    }
+}

@@ -25,29 +25,33 @@ import ReactDOM from 'react-dom/client';
 
 // import ToggleList from "./08/ToggleList";
 // import MyButton from "./08/MyButton";
-import Mybutton2 from "./08/Mybutton2";
+// import Mybutton2 from "./08/Mybutton2";
 // import MyButton2 from "./08/Mybutton2"
-import ConfirmButton2 from "./08/ConfirmButton2";
-import Message from "./08/Message";
-import LogInButton from "./09/ex2/LogInButton";
+// import ConfirmButton2 from "./08/ConfirmButton2";
+// import Message from "./08/Message";
+// import LogInButton from "./09/ex2/LogInButton";
 // import LogInControl from "./09/ex2/LogInControl";
-import MailBox from "./09/ex3/MailBox";
-import MainPage from "./09/ex04/MainPage";
-import LandingPage from "./09/finalEX/LandingPage";
-import maptest from "./10/MapTest";
-import MapTest from "./10/MapTest";
-import AttendanceBook from "./10/AttendanceBook";
-import AttendanceCardBook from "./10/AttendanceCardBook";
-import NewForm from "./10/11/NewForm";
-import FruitSelect from "./10/11/FruitSelect";
-import Reservation from "./10/11/Reservation";
-
+// import MailBox from "./09/ex3/MailBox";
+// import MainPage from "./09/ex04/MainPage";
+// import LandingPage from "./09/finalEX/LandingPage";
+// import maptest from "./10/MapTest";
+// import MapTest from "./10/MapTest";
+// import AttendanceBook from "./10/AttendanceBook";
+// import AttendanceCardBook from "./10/AttendanceCardBook";
+// import NewForm from "./11/NewForm";
+// import FruitSelect from "./11/FruitSelect";
+// import Reservation from "./11/Reservation";
+// import BoilingVerdict from "./12/ex1/BoilingVerdict";
+// import Calculator from "./12/ex1/Calculator";
+// import Calculator from "./12/ex3/Calculator";
+//
+import DistanceConverter from "./12/ex5/DistanceConverter";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <Reservation/>
+        <DistanceConverter/>
     </React.StrictMode>
 );
 
