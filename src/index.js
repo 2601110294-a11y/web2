@@ -46,14 +46,17 @@ import ReactDOM from 'react-dom/client';
 // import Calculator from "./12/ex3/Calculator";
 //
 import DistanceConverter from "./12/ex5/DistanceConverter";
-import WelcomeDialog from "./13/ex1/WelcomeDialog";
-
+// import WelcomeDialog from "./13/ex1/WelcomeDialog";
+import Dialog from "./13/ex2/Dialog";
+import WelcomeDialog from "./13/ex2/WelcomeDialog";
+import SignUpDialog from "./13/ex3/SignUpDialog";
+import ProfileCard from"./13/ex4/ProfileCard";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <WelcomeDialog/>
+        <ProfileCard/>
     </React.StrictMode>
 );
 

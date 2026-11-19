@@ -1,10 +1,17 @@
 
-.FancyBorder {
+.Dialog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+}
+
+.FancyBorder {
     border: 5px solid;
     border-radius: 10px;
+    padding: 20px;
     text-align: center;
-    margin: 20px;
+    flex: 1;
 }
 
 .FancyBorder-blue {
@@ -13,8 +20,7 @@
 
 .Dialog-title {
     font-size: 28px;
-    color: blue;
-    margin-bottom: 15px;
+    color: black;
 }
 
 .Dialog-message {
